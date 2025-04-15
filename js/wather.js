@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const weatherDesc = document.querySelector('.weather-desc');
   const weatherIcon = document.querySelector('.weather-icon');
 
-  const apiKey = '4eb41268e1a3463988905041250704'; 
+  const apiKey = '4f4dd2de99bf4cdfb8301831251504'; 
   const city = 'Cancun';
 
   async function fetchWeather() {

@@ -1,70 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shangri-La Beach Resort</title>
-  <link rel="icon" href="favicon.png" />
- <link rel="stylesheet" href="/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <script defer src="/js/wather.js"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shangri-La Beach Resort</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="icon" href="/favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-flex">
-      <img src="/logo.png" alt="" class="logo" />
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="rooms.html">Rooms & Rates</a></li>
-          <li><a href="activities.html">Activities</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div id="weather" class="weather-display">Loading weather...</div>
-    </div>
-  </header>
-
+<header>
+<div class="header-content">
+<div class="logo-weather-container">
+<img src="/logo.svg" alt="Shangri-La Resort Logo" class="logo">
+<div class="weather-widget">
+<div class="weather-content">
+<div class="weather-icon"></div>
+<div class="weather-info">
+<span class="weather-temp"></span>
+<span class="weather-desc"></span>
+</div>
+</div>
+</div>
+</div>
+<button class="burger-menu" aria-label="Toggle navigation menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="main-nav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About us</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="rooms.html">Rooms</li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+ 
   <main>
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Welcome to Shangri-La Beach Resort</h1>
-        <p>Your tropical paradise awaits in the heart of Cancun, Mexico.</p>
-        <a href="rooms.html" class="btn-primary">Book Your Stay</a>
-      </div>
-    </section>
-
+<section class="hero">
+<div class="image-slider">
+<img src="assets/Images/architecture-blue-water-buildings-261102.jpg" class="slider-image" alt="Resort View" />
+<img src="assets/Images/beach-huts.jpg" class="slider-image" alt="Beach Huts" />
+<img src="assets/Images/hotel-1191726_1920.jpg" class="slider-image" alt="Luxury Hotel" />
+</div>
+<article class="hero-text">
+<h1>Shangri-La Beach Resort - Your Dream Getaway</h1>
+<p>Escape to Paradise</p>
+<p>Indulge in luxury and breathtaking views at Shangri-La Beach Resort.</p>
+</article>
+</section>
+ 
     <section class="features">
-      <div class="container grid">
-        <div class="feature">
-          <img src="images/feature1.webp" alt="Luxury Rooms" />
-          <h2>Luxury Rooms</h2>
-          <p>Relax in our modern, spacious rooms with ocean views and top-class amenities.</p>
-        </div>
-        <div class="feature">
-          <img src="images/feature2.webp" alt="Exciting Activities" />
-          <h2>Exciting Activities</h2>
-          <p>From scuba diving to yoga on the beach, there’s something for everyone.</p>
-        </div>
-        <div class="feature">
-          <img src="media assests/photos/pexels-valeriya-3123549.jpg" alt="Gourmet Dining" />
-          <h2>Gourmet Dining</h2>
-          <p>Enjoy world-class cuisine with fresh, local ingredients prepared by top chefs.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Shangri-La Beach Resort. All rights reserved.</p>
-      <ul class="footer-nav">
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Use</a></li>
-      </ul>
-    </div>
-  </footer>
+<h2>Experience Unforgettable Moments</h2>
+<div class="features-grid">
+<article class="feature-item">
+<i class="fas fa-umbrella-beach"></i>
+<h3>Private Beach Access</h3>
+<p>Step onto our pristine, white-sand beach.</p>
+</article>
+<article class="feature-item">
+<i class="fas fa-swimming-pool"></i>
+<h3>Infinity Pool</h3>
+<p>Relax by our stunning oceanfront infinity pool.</p>
+</article>
+<article class="feature-item">
+<i class="fas fa-spa"></i>
+<h3>World-Class Spa</h3>
+<p>Rejuvenate your mind and body at our spa.</p>
+</article>
+<article class="feature-item">
+<i class="fas fa-utensils"></i>
+<h3>Exquisite Dining</h3>
+<p>Savor culinary delights at our restaurants.</p>
+</article>
+</div>
+</section>
+ 
+    <section class="accommodations">
+<div class="room-grid">
+<article class="room-card">
+<img src="assets/Images/beach-huts.jpg" alt="Ocean View Deluxe Room">
+<h3>Ocean View Deluxe Room</h3>
+<p>Enjoy stunning ocean views from your private balcony.</p>
+<a href="accommodations.html" class="view-details-btn">
+<span>View Details</span>
+</a>
+</article>
+<article class="room-card">
+<img src="assets/Images/hero.jpg" alt="Beachfront Suite">
+<h3>Beachfront Suite</h3>
+<p>Step directly onto the sand from your spacious suite.</p>
+<a href="accommodations.html" class="view-details-btn">
+<span>View Details</span>
+</a>
+</article>
+<article class="room-card">
+<img src="assets/Images/resort-drone.jpg" alt="Garden View Family Room">
+<h3>Garden View Family Room</h3>
+<p>Perfect for families, with ample space and garden views.</p>
+<a href="accommodations.html" class="view-details-btn">
+<span>View Details</span>
+</a>
+</article>
+</div>
+</section>
+ 
+    <section class="testimonials">
+<h2>What Our Guests Are Saying</h2>
+<div class="testimonial-grid" id="testimonial-grid">
+<article class="testimonial-card">
+<p>"Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were breathtaking."</p>
+<cite>- Sarah M.</cite>
+</article>
+<article class="testimonial-card">
+<p>"The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible."</p>
+<cite>- John B.</cite>
+</article>
+<!-- Hidden testimonials -->
+<article class="testimonial-card hidden">
+<p>"From the moment we arrived, we felt like royalty. The staff was so welcoming, and the food was absolutely delicious!"</p>
+<cite>- Emily R.</cite>
+</article>
+<article class="testimonial-card hidden">
+<p>"The infinity pool overlooking the ocean was a dream. We spent hours just soaking in the view."</p>
+<cite>- Mark T.</cite>
+</article>
+<article class="testimonial-card hidden">
+<p>"A perfect getaway! The resort was peaceful, the beach was pristine, and the spa treatments were heavenly."</p>
+<cite>- Laura K.</cite>
+</article>
+<article class="testimonial-card hidden">
+<p>"This was our honeymoon destination, and it couldn't have been more magical. The romantic dinner on the beach was unforgettable."</p>
+<cite>- Daniel & Jessica P.</cite>
+</article>
+</div>
+<button class="view-details-btn" id="load-more">
+<span>Read More Testimonials</span>
+</button>
+</section>
+</main>
+ 
+  <footer>
+<div class="footer-content">
+<div class="footer-social">
+<a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page">
+<i class="fab fa-facebook"></i>
+</a>
+<a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="https://youtube.com" target="_blank" aria-label="Visit our YouTube channel">
+<i class="fab fa-youtube"></i>
+</a>
+</div>
+<p>&copy; 2025 Shangri-La Beach Resort | Cancun, Mexico</p>
+<p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/burger-menu.js"></script>
+<script src="js/weather.js"></script>
 </body>
 </html>
